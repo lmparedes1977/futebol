@@ -1,0 +1,21 @@
+<!-- /futebol/gremio/templates/gremio/paginas/trofeus.html -->
+{% load static %}
+{% include 'gremio/parciais/head.html' %}
+<body>
+    {% include 'global/cabecalho.html' %}
+
+    <h1>Sou a página de TROFÉUS do GRÊMIO!</h1>
+    {% include 'gremio/parciais/menu.html' %}
+    <h2>Lista de troféus</h2>
+    <ul>
+    {% if lista  %}
+        {% for vitoria in lista %}
+        <li><a href="trofeu/{{vitoria.ano}}">{{vitoria.ano}} - {{vitoria.titulo}}</a></li>
+        {% endfor %}
+    {% else %}
+        <li>Este time ainda não tem vitórias</li>
+    {% endif %}
+    </ul>
+    {% include 'gremio/parciais/rodape.html' %}
+</body>
+</html>

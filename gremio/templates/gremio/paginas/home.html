@@ -1,0 +1,15 @@
+<!-- futebol/gremio/templates/gremio/paginas/home.html -->
+{% load static %}
+{% include 'gremio/parciais/head.html' %}
+<body>
+    {% include 'global/cabecalho.html' %}
+    <main>
+        <div>gremio...</div>
+        <div>
+            {% include 'gremio/parciais/menu.html' %}
+            <img src="{% static 'gremio/img/gremio.jpg' %}" alt="">
+        </div>
+    </main>
+    {% include 'gremio/parciais/rodape.html' %}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- futebol/gremio/templates/gremio/paginas/contato.html -->
+{% extends 'global/paginas/base-contato.html' %}
+
+{% load static %}
+
+{% block css_app %}
+    <link rel="stylesheet" href="{% static 'gremio/css/style.css' %}">
+{% endblock css_app %}
+
+
+{% block titulo %}CONTATO GREMIO{% endblock titulo%}
+
+
+{% block tag_h1 %}
+    <h1>Sou a página de <b>CONTATO</b> do Gremio</h1>
+{% endblock tag_h1 %}
+
+{% block menu %}
+    {% include 'gremio/parciais/menu.html' %}
+{% endblock menu %}
+
+{% block responsavel %}
+    <ul>
+        {% for pessoa in pessoas %}
+        <li>{{ pessoa.nome }}</li>
+        {% endfor %}
+    </ul>
+{% endblock responsavel %}

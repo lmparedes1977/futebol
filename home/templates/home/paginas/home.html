@@ -1,0 +1,15 @@
+<!-- futebol/home/templates/home/paginas/home.html -->
+{% load static %}
+{% include 'home/parciais/head.html' %}
+<body>
+    {% include 'global/cabecalho.html' %}
+    <main>
+        <div>A PÁGINA DO FUTEBOL BRASILEIRO</div>
+        {% include 'home/parciais/menu.html' %}
+        <div>
+            <img src="{% static 'home/img/grenal.jpg' %}" alt="">
+        </div>
+    </main>
+    {% include 'global/rodape.html' %}
+</body>
+</html>

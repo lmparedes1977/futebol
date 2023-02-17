@@ -1,0 +1,15 @@
+<!-- futebol/inter/templates/inter/paginas/home.html -->
+{% load static %}
+{% include 'inter/parciais/head.html' %}
+<body>
+    {% include 'global/cabecalho.html' %}
+    <main>
+        <div>Sou a página do GLORIOSO SPORT CLUB INTERNACIONAL</div>
+        {% include 'inter/parciais/menu.html' %}
+        <div>
+            <img src="{% static 'inter/img/inter.png' %}" alt="" style="width: 800px; height: auto">
+        </div>
+    </main>
+    {% include 'inter/parciais/rodape.html' %}
+</body>
+</html>

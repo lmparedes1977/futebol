@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'global/css/estilo.css' %}">
+    {% block css_app %}{% endblock css_app %}
+    <title>{% block titulo %}TÍTULO CONTATO PADRÃO{% endblock %}</title>
+</head>
+<body>
+    {% block tag_h1 %}<h1>Sou a <b>CONTATO</b> geral</h1>{% endblock tag_h1 %}
+    {% block menu %} <div>Menu do Site</div> {% endblock menu %}
+    {% block responsavel %}
+    <ul>
+        <li>Não há responsáveis</li>
+    </ul>
+    {% endblock responsavel %}
+</body>
+</html>

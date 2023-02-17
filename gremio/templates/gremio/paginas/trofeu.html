@@ -1,0 +1,14 @@
+<!-- /futebol/gremio/templates/gremio/paginas/trofeu.html -->
+{% include 'gremio/parciais/head.html' %}
+<body>
+    {% include 'global/cabecalho.html' %}
+    <main>
+        sou a página do troféu
+        {% include 'gremio/parciais/menu.html' %}
+        <h1>{{campeonato_vencido.titulo}}</h1>
+        <h3>{{campeonato_vencido.descricao}}</h3>
+        <img src="{{campeonato_vencido.foto.url}}" alt="">
+    </main>
+    {% include 'gremio/parciais/rodape.html' %}
+</body>
+</html>

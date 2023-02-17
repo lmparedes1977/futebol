@@ -1,0 +1,22 @@
+<!-- futebol/inter/templates/inter/paginas/contato.html -->
+{% extends 'global/paginas/base-contato.html' %}
+{% load static %}
+{% block css_app %}
+    <link rel="stylesheet" href="{% static 'inter/css/style.css' %}">
+{% endblock css_app %}
+    <title>{% block titulo %}CONTATO INTER{% endblock %}</title>
+</head>
+<body>
+{% block tag_h1 %}
+    <h1>Sou a página de <b>CONTATO</b> do INTER</h1>
+{% endblock tag_h1 %}
+{% block menu %}
+    {% include 'inter/parciais/menu.html' %}
+{% endblock menu %}
+{% block responsavel %}
+    <ul>
+        {% for pessoa in pessoas %}
+        <li>{{ pessoa.nome }}</li>
+        {% endfor %}
+    </ul>
+{% endblock responsavel %}
