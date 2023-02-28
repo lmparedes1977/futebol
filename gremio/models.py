@@ -23,4 +23,4 @@ class Campeonato(models.Model):
 
     def __str__(self) -> str:
         """Doc"""
-        return str(self.titulo)
+        return f'{self.titulo} - {self.ano_campeao}'
